@@ -8,12 +8,12 @@
   </head>
 
   <body>
-    
     <header class="site-header">
       <h1>DPS Games</h1>
 
       <nav class="main-nav">
         <ul>
+          <li id="cart-button" style="cursor: pointer">🛒 Cart</li>
           <li><a href="#">Browse</a></li>
           <li><a href="#">Offers</a></li>
           <li><a href="#">Sign In</a></li>
@@ -22,7 +22,6 @@
     </header>
 
     <main>
-      
       <section class="hero">
         <header>
           <h2>Discover New Worlds</h2>
@@ -33,72 +32,17 @@
         <button class="hero-button">View Catalog</button>
       </section>
 
-      
       <section class="games-section">
         <h2 class="section-title">Featured Games</h2>
 
-        <section class="games-grid">
-          
-          <article class="game-card">
-            <figure class="game-image">
-              <img
-                src="./images/elden_ring.jpg"
-                alt="Elden Ring game cover"
-              />
-            </figure>
-
-            <section class="game-info">
-              <h3>Elden Ring</h3>
-              <span class="price">$59.99</span>
-              <p>
-                An epic fantasy action-RPG adventure set in a vast open world
-                created by FromSoftware and George R.R. Martin.
-              </p>
-            </section>
-          </article>
-
-          <article class="game-card">
-            <figure class="game-image">
-              <img
-                src="./images/cyberpunk.jpg"
-                alt="Cyberpunk 2077 game cover"
-              />
-            </figure>
-
-            <section class="game-info">
-              <h3>Cyberpunk 2077</h3>
-              <span class="price">$39.99</span>
-              <p>
-                A story-driven, open world RPG set in the megalopolis of Night
-                City, where you play as V, a mercenary outlaw going after a
-                one-of-a-kind implant.
-              </p>
-            </section>
-          </article>
-
-          <article class="game-card">
-            <figure class="game-image">
-              <img
-                src="./images/hollow_knight.jpg"
-                alt="Hollow Knight game cover"
-              />
-            </figure>
-
-            <section class="game-info">
-              <h3>Hollow Knight</h3>
-              <span class="price">$14.99</span>
-              <p>
-                An epic action adventure through a vast, ruined kingdom of insects and heroes. Explore twisting caverns, ancient cities,
-                and deadly wastes.
-              </p>
-            </section>
-          </article>
-        </section>
+        <section class="games-grid" id="games-grid"></section>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>© 2024 DPS Games Store</p>
     </footer>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
